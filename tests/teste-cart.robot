@@ -18,13 +18,18 @@ Testar a compra de um produto através do carrinho
     Realizar compra
     Verificar se confirmação da compra foi efetuada
 
-#Excluir um produto do carrinho
-#    Clicar em um produto
-#    Adicionar produto ao carrinho
-#    Clicar no carrinho
-#    Verificar se existem produtos no carrinho
-#    Deletar o produto
-#    Verificar se não existe nenhum produto no carrinho
+Excluir um produto do carrinho
+    Clicar em um produto
+    Adicionar produto ao carrinho
+    Clicar no carrinho
+    Verificar se existem produtos no carrinho
+    Deletar o produto
+    Verificar se não existe nenhum produto no carrinho
 
-#Testar compra sem produtos no carrinho
-#    Entrar no carrinho e realizar compra sem produtos
+Testar compra sem produtos no carrinho
+    Clicar no carrinho
+    Verificar se não existe nenhum produto no carrinho
+    Fazer pedido
+    Preencher dados da compra
+    Realizar compra
+    Verificar se confirmação da compra foi negada

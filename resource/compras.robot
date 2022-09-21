@@ -25,6 +25,8 @@ ${ANO}  2023
 ${REALIZAR_COMPRA}  xpath=//button[contains(text(), 'Purchase')]
 ${VENDA_CONFIRMADA}  xpath=//h2[contains(text(), 'Thank you for your purchase!')]
 
+${DELETAR_PRODUTO}  //*[contains(text(), 'Delete')]
+
 ***Keywords***
 Clicar em um produto
     Click Element  ${PRODUTO}
@@ -56,3 +58,11 @@ Realizar compra
 Verificar se confirmação da compra foi efetuada
     Should Contain  ${VENDA_CONFIRMADA}
 
+Deletar o produto
+    Click Element ${DELETAR_PRODUTO}
+
+Verificar se não existe nenhum produto no carrinho
+    Should Not Contain  ${PRODUTO_CARRINHO}
+
+Verificar se confirmação da compra foi negada
+    Should Not Contain  ${VENDA_CONFIRMADA}
