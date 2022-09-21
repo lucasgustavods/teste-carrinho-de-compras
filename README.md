@@ -6,25 +6,25 @@
 
 Para fazer a aplicação rodar basta clonar o repositório e rodar os comandos:
 
-  - Dentro da pasta tests:
+Dentro da pasta tests:
 
 > robot -d ../results teste-cart.robot
 
 Dependencias:
 Caso não tenha Python, robot e chromedriver instalados:
 
-  - Instalar o Python 3.x e o pip.
-  - Instalar o Robot Framework, no terminal execute o seguinte comando:
+Instalar o Python 3.x e o pip.
+Instalar o Robot Framework, no terminal execute o seguinte comando:
 
 > pip install -U robotframework robot --version
 
-  - Instalar Selenium Library para o Robot Framework:
+Instalar Selenium Library para o Robot Framework:
 
 > pip install --upgrade robotframework-seleniumlibrary
 
 Para que os testes possam ser realizados através do navegador, colocar o arquivo do chromedriver em /usr/local/bin no caso do linux, para verificar o PATH basta executar echo %PATH% no terminal do windows e echo $PATH no terminal do linux.
 
-   - [ChromeDriver](https://chromedriver.chromium.org/downloads) para o google chrome (necessário baixar o arquivo com a mesma versão do navegador).
+[ChromeDriver](https://chromedriver.chromium.org/downloads) para o google chrome (necessário baixar o arquivo com a mesma versão do navegador).
 
 --------------------------------------------------------------------------------------------------------
 
