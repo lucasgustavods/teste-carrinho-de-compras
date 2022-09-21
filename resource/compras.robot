@@ -30,6 +30,7 @@ ${DELETAR_PRODUTO}  //*[contains(text(), 'Delete')]
 
 ***Keywords***
 Clicar em um produto
+    Wait Until Keyword Succeeds  10s  200ms  ${PRODUTO}
     Click Element  ${PRODUTO}
 
 Adicionar produto ao carrinho
@@ -61,7 +62,7 @@ Verificar se confirmação da compra foi efetuada
     Click Element  ${VENDA_OK}
 
 Deletar o produto
-    Click Element ${DELETAR_PRODUTO}
+    Click Element  ${DELETAR_PRODUTO}
 
 Verificar se não existe nenhum produto no carrinho
     Should Not Contain  ${PRODUTO_CARRINHO}  FAILED  ignore_case=True

@@ -18,7 +18,7 @@ ${SENHA}  admin
 Abrir o navegador no e-commerce
     Open Browser  ${URL_ECOMMERCE}  ${NAVEGADOR_DO_TESTE}
     Maximize Browser Window
-    Set Selenium Speed  0.5
+    Set Selenium Speed  0.5s
 
 Realizar o login
     Informar usuário e senha 
