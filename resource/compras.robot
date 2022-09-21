@@ -64,4 +64,4 @@ Deletar o produto
     Click Element ${DELETAR_PRODUTO}
 
 Verificar se não existe nenhum produto no carrinho
-    Should Not Contain  ${PRODUTO_CARRINHO}  CORRETO  ignore_case=True
+    Should Not Contain  ${PRODUTO_CARRINHO}  FAILED  ignore_case=True
