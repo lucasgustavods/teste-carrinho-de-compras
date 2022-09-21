@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 ***Variables***
-${PRODUTO}  xpath=//*[contains(text(), 'Samsung galaxy s6')]
+${PRODUTO}  xpath=//a[contains(text(), 'Samsung galaxy s6')]
 ${ADD_CARRINHO}  xpath=//a[contains(text(), 'Add to cart')]
 ${TEXT_CARRINHO}  id=cartur
 ${PRODUTO_CARRINHO}  xpath=//td[contains(text(), 'Samsung galaxy s6')]
@@ -30,7 +30,7 @@ ${DELETAR_PRODUTO}  //*[contains(text(), 'Delete')]
 
 ***Keywords***
 Clicar em um produto
-    Wait Until Keyword Succeeds  10s  200ms  ${PRODUTO}
+    Wait Until Keyword Succeeds  1s  0.5s  ${PRODUTO}
     Click Element  ${PRODUTO}
 
 Adicionar produto ao carrinho
