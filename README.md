@@ -39,4 +39,4 @@ relatórios e logs
 > ./teste-carrinho-de-compras/results/*
 
 --------------------------------------------------------------------------------------------------------
-
+*Obs.: Até o momento não consegui fazer a seleção de alguns dos xpaths dos elementos em tela, embora eles sejam detectaveis através da ferramenta de inspeção do navegador e sejam elementos unicos da tela, o robot não consegue identificar os mesmos, as lógicas aplicadas funcionaram em outros elementos.
