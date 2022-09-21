@@ -25,11 +25,3 @@ Excluir um produto do carrinho
     Verificar se existem produtos no carrinho
     Deletar o produto
     Verificar se não existe nenhum produto no carrinho
-
-Testar compra sem produtos no carrinho
-    Clicar no carrinho
-    Verificar se não existe nenhum produto no carrinho
-    Fazer pedido
-    Preencher dados da compra
-    Realizar compra
-    Verificar se confirmação da compra foi negada

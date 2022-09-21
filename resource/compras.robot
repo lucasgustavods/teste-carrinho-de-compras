@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 ***Variables***
 ${PRODUTO}  xpath=//*[contains(text(), 'Samsung galaxy s6')]
 ${ADD_CARRINHO}  xpath=//a[contains(text(), 'Add to cart')]
-${TEXT_CARRINHO}  xpath=//a[contains(text(), 'Cart')]
+${TEXT_CARRINHO}  id=cartur
 ${PRODUTO_CARRINHO}  xpath=//td[contains(text(), 'Samsung galaxy s6')]
 ${FAZER_PEDIDO}  xpath=//button[contains(text(), 'Place Order')]
 
@@ -24,6 +24,7 @@ ${ANO}  2023
 
 ${REALIZAR_COMPRA}  xpath=//button[contains(text(), 'Purchase')]
 ${VENDA_CONFIRMADA}  xpath=//h2[contains(text(), 'Thank you for your purchase!')]
+${VENDA_OK}  //*[contains(text(), 'OK')]
 
 ${DELETAR_PRODUTO}  //*[contains(text(), 'Delete')]
 
@@ -57,12 +58,10 @@ Realizar compra
 
 Verificar se confirmação da compra foi efetuada
     Should Contain  ${VENDA_CONFIRMADA}
+    Click Element  ${VENDA_OK}
 
 Deletar o produto
     Click Element ${DELETAR_PRODUTO}
 
 Verificar se não existe nenhum produto no carrinho
-    Should Not Contain  ${PRODUTO_CARRINHO}
-
-Verificar se confirmação da compra foi negada
-    Should Not Contain  ${VENDA_CONFIRMADA}
+    Should Not Contain  ${PRODUTO_CARRINHO}  CORRETO  ignore_case=True
