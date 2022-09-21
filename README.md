@@ -10,8 +10,7 @@ Dentro da pasta tests:
 
 > robot -d ../results teste-cart.robot
 
-Dependencias:
-Caso não tenha Python, robot e chromedriver instalados:
+Dependencias, caso não tenha Python, robot e chromedriver instalados:
 
 Instalar o Python 3.x e o pip.
 Instalar o Robot Framework, no terminal execute o seguinte comando:
